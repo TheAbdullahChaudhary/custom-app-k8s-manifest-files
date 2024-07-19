@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: custom-apache-deployment
-  namespace: application
+  namespace: application-1
   labels:
     app: custom-apache
 spec:
