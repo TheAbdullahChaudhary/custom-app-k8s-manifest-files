@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: custom-apache
-        image: 891377137882.dkr.ecr.us-east-1.amazonaws.com/my-django-todo-app:latest
+        image: theabdullahchaudhary/my-apache-server-with-love-message:latest
         ports:
         - containerPort: 80
