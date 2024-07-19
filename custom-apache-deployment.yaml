@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: custom-apache-deployment
-  namespace: ingress-nginx
+  namespace: application
   labels:
     app: custom-apache
 spec:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: custom-apache
-        image: theabdullahchaudhary/my-apache-server-with-love-message:latest
+        image: 891377137882.dkr.ecr.us-east-1.amazonaws.com/my-django-todo-app:latest
         ports:
         - containerPort: 80
 
